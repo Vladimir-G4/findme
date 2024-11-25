@@ -1,4 +1,4 @@
-# FindMe - CS485 Cybersecurity & Usability Project
+# FindMe🔎 - CS485 Cybersecurity & Usability Project
 
 ## Overview
 FindMe is a web application designed as a part of NJIT's CS485 (Cybersecurity and Usability) course project. The purpose of the application is to bring awareness to the vast amount of personal data that is publicly accessible online. It allows users to see how much of their personal information—including phone numbers, addresses, email addresses, social media profiles, and more—is publicly available and can be easily found through online searches.
