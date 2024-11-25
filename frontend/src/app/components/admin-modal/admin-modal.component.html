@@ -1,0 +1,40 @@
+<div *ngIf="!isLoading">
+  <div class="modal-header">
+    <h5 class="modal-title" id="adminModalLabel">Admin Password</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="activeModal.close('Close click')"></button>
+  </div>
+  <div class="modal-body">
+    <p><strong>First Name:</strong> {{ firstName }}</p>
+    <p><strong>Last Name:</strong> {{ lastName }}</p>
+    <p><strong>State:</strong> {{ state }}</p>
+    
+    <div class="mb-3">
+      <input 
+        type="password" 
+        class="form-control" 
+        [(ngModel)]="adminPassword" 
+        placeholder="This is the password to run the search." 
+        aria-describedby="adminPasswordHelp"
+        required
+      />
+      <div *ngIf="passwordInvalid" class="text-danger mt-2">
+        <p>Invalid password! Please try again.</p>
+      </div>
+    </div>
+    <div class="text-center text-muted small mt-2">
+      Please note, the search may take 10-15 seconds.
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" (click)="activeModal.close('Close click')">Cancel</button>
+    <button 
+      type="button" 
+      class="btn modal-button" 
+      [disabled]="passwordInvalid || isLoading" 
+      (click)="runSearch()">Run</button>
+  </div>
+</div>
+
+<div *ngIf="isLoading" class="loading-indicator">
+  <div class="spinner-border" role="status"></div>
+</div>

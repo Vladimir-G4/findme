@@ -1,0 +1,24 @@
+.header {
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+  
+.nav-link:hover {
+    color: #1e88e5;
+}
+  
+.active-link {
+    font-weight: 800;
+}
+
+.logo {
+    font-weight: 600;
+}

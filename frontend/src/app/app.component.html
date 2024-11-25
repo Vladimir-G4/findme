@@ -1,0 +1,13 @@
+<div class=" p-0">
+  <div *ngIf="showDisclaimer" class="alert alert-warning alert-dismissible fade show text-center banner-alert" role="alert">
+    <strong>Disclaimer:</strong> FindMe is an experimental application developed as part of an <a href="https://www.spur.science/courses/usec/2024/assignments/project.html" target="_blank" class="link">academic project</a>. While we strive to provide accurate and meaningful results, the data retrieved may not always be precise or comprehensive. Users are encouraged to interpret the information as a demonstration of the potential accessibility of personal data online, rather than as a definitive report. Feedback is welcome as we continue to improve this tool.
+    <button type="button" class="btn-close" aria-label="Close" (click)="dismissDisclaimer()"></button>
+  </div>
+</div>
+<div class="container d-flex flex-column">
+  <app-navbar></app-navbar>
+  <main class="main flex-grow-1">
+    <router-outlet />
+  </main>
+  <app-footer class="mt-auto"></app-footer>
+</div>

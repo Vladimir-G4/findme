@@ -1,0 +1,95 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Ginto';
+    src: url('/assets/fonts/Ginto_Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ginto';
+    src: url('/assets/fonts/Ginto_Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ginto';
+    src: url('/assets/fonts/Ginto_Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ginto Nord';
+    src: url('/assets/fonts/Ginto_Nord_Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ginto Nord';
+    src: url('/assets/fonts/Ginto_Nord_Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'Ginto', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.button {
+    display: inline-block;
+    background-color: #000000;
+    border: none;
+    color: #ffffff;
+    font-size: 0.9375rem;
+    border-radius: 0.75rem;
+    padding: 0.625rem 1.75rem;
+    margin-top: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background-color: #333333;
+    transform: translateY(-2px);
+}
+
+.button:active {
+    background-color: #111111;
+    transform: translateY(0);
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 0.875rem;
+  margin-top: -5px;
+  padding: 0 5px;
+  font-weight: 500;
+}
+
+.error p {
+  margin: 0;
+}
+
+.link {
+    color: black !important;
+}
+
+.link_no_underline {
+    color: black !important;
+    text-decoration: none !important;
+}

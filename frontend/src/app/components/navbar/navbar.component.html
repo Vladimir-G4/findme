@@ -1,0 +1,22 @@
+<header class="header">
+    <nav class="d-flex justify-content-center align-items-center gap-5">
+        <a
+            routerLink="/"
+            routerLinkActive="active-link"
+            class="text-dark nav-link px-5"
+            [routerLinkActiveOptions]="{ exact: true }"
+        >
+            Home
+        </a>
+        
+        <span class="logo">FindMe🔎</span>
+        
+        <a
+            routerLink="/about"
+            routerLinkActive="active-link"
+            class="text-dark nav-link px-5"
+        >
+            About
+        </a>
+    </nav>
+</header>
